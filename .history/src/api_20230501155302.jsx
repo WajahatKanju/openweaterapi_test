@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://jsonplaceholder.typicode.com';
+const API_BASE_URL = 'https://api.openweathermap.org/data/2.5/';
 
 export const getUsers = () => {
   return axios.get(`${API_BASE_URL}/users`)

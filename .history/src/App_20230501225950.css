@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+sup {
+  font-size: 12px;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.weather p:first-of-type {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.weather p:last-of-type {
+  margin-top: 20px;
+}
+
+.weather img {
+  width: 100px;
+  height: 100px;
+}
+
+.map-container {
+  width: 90vw;
+}
+
+
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075), 0 0.5rem 1.125rem rgba(0, 0, 0, 0.1);
+}
+
+.endpoint-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.endpoint-buttons button {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.endpoint-buttons button:hover {
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075), 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.switch-theme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.switch-theme span {
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.switch-theme svg {
+  fill: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+.light-theme .switch-theme svg {
+  transform: rotate(0deg);
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme .switch-theme svg {
+  transform: rotate(180deg);
+}
